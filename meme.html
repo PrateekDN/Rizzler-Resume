@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prateek Debnath - Meme Lord Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=VT323&display=swap');
+
+        :root {
+            --neon-green: #39ff14;
+            --neon-pink: #ff00ff;
+            --background-color: #1a001a;
+            --text-color: #f0f0f0;
+            --shadow-color: rgba(0, 0, 0, 0.75);
+        }
+
+        body {
+            background-color: var(--background-color);
+            /* --- YOU CAN CHANGE THE BACKGROUND IMAGE URL HERE --- */
+            background-image: url('https://i.imgflip.com/65k44a.jpg');
+            background-repeat: repeat;
+            background-size: 300px;
+            font-family: 'VT323', monospace;
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2em;
+            box-sizing: border-box;
+        }
+
+        @keyframes text-glitch {
+            0% { text-shadow: 2px 0 var(--neon-green), -2px 0 var(--neon-pink); }
+            25% { text-shadow: -2px 0 var(--neon-green), 2px 0 var(--neon-pink); }
+            50% { text-shadow: 2px 2px var(--neon-green), -2px -2px var(--neon-pink); }
+            75% { text-shadow: -2px 2px var(--neon-green), 2px -2px var(--neon-pink); }
+            100% { text-shadow: 2px 0 var(--neon-green), -2px 0 var(--neon-pink); }
+        }
+
+        @keyframes background-flicker {
+            0%, 100% { box-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink), inset 0 0 15px var(--neon-pink); }
+            50% { box-shadow: 0 0 15px var(--neon-green), 0 0 25px var(--neon-green), inset 0 0 20px var(--neon-green); }
+        }
+
+        .resume-container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(10, 0, 10, 0.85);
+            border: 3px solid var(--neon-green);
+            padding: 2.5em;
+            box-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink), inset 0 0 15px var(--neon-pink);
+            backdrop-filter: blur(4px);
+            animation: background-flicker 5s infinite alternate;
+        }
+
+        h1, h2 {
+            font-family: 'Libre Franklin', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            animation: text-glitch 1.5s infinite linear;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: var(--neon-green);
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            color: var(--neon-pink);
+            margin-top: 0;
+            margin-bottom: 2em;
+            font-style: italic;
+        }
+
+        h3 {
+            font-family: 'VT323', monospace;
+            color: var(--neon-green);
+            font-size: 1.8em;
+            border-bottom: 2px solid var(--neon-pink);
+            padding-bottom: 5px;
+            margin-top: 1.5em;
+            text-shadow: 1px 1px var(--shadow-color);
+        }
+
+        p, li {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: var(--text-color);
+            text-shadow: 1px 1px 2px var(--shadow-color);
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li::before {
+            content: '>> ';
+            color: var(--neon-pink);
+            font-weight: bold;
+        }
+
+        .section-title {
+            color: var(--neon-pink);
+            font-weight: bold;
+        }
+
+        .experience-header {
+            font-size: 1.3em;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .experience-header .title {
+             color: var(--text-color);
+        }
+
+        .experience-header .location {
+            color: var(--neon-green);
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        <h1>Prateek Debnath</h1>
+        <h2>Chief Rizz Officer & Meme Lord</h2>
+
+        <h3>The Lore</h3>
+        <p>
+            A chronically online CSE major, locked in and ready to take this meme page from NPC status to the main character. My entire personality is a canon event designed to farm engagement and serve looks, vibes, and high-tier brainrot. I don't just post memes; I manifest a digital aura that will have the entire college saying, "he's HIM." I'm not here to yap; I'm here to change the game. This is my villain arc.
+        </p>
+
+        <h3>Skill Tree (XP Invested)</h3>
+        <ul>
+            <li><span class="section-title">Content Curation (S+ Tier):</span> Master of the algorithm. Specializations in Skibidi lore, sophisticated glazing techniques, and identifying what's bussin' vs. what's a full-on side quest to Cringe City.</li>
+            <li><span class="section-title">Quantum Rizzics:</span> Capable of executing charisma-based RNG manipulation to slide into the DMs of the student body's collective consciousness. It's not a skill, it's a lifestyle.</li>
+            <li><span class="section-title">Yap-anese Fluency:</span> Verbally and textually fluent in all modern dialects of Yap. Can out-yap a 10-hour podcast.</li>
+            <li><span class="section-title">Professional Mogger:</span> Bone-smashed aesthetics and a mewing streak that silently asserts dominance in any digital space. Bye Bye 🤫.</li>
+            <li><span class="section-title">NPC Detection & Ratio Deployment:</span> Elite ability to spot low-effort comments and deploy a tactical ratio. W's are the only acceptable outcome.</li>
+            <li><span class="section-title">Vibe Mechanics:</span> I don't just check the vibe; I am the vibe. Currently rocking a "delulu is the solulu" meta.</li>
+            <li><span class="section-title">The Grind (No-Life Allegiance):</span> Maxed-out screen time. Ready to post at 3 AM because we are not the same.</li>
+        </ul>
+
+        <h3>Previous Quests (Field Work)</h3>
+        <div class="experience-header">
+            <span class="title">Chief Yaptain & Vibe Controller</span>
+            <span class="location">The Discord Server | 2022 - Present</span>
+        </div>
+        <ul>
+            <li>Architected a content pipeline that increased server gyatt by 69%.</li>
+            <li>Led high-stakes GIF battles and secured a 95% win rate.</li>
+            <li>Monitored the #general channel for cringe, successfully purging all boomer-level humor.</li>
+            <li>Secured multiple "W's" while distributing an appropriate number of "L's."</li>
+        </ul>
+        <div class="experience-header">
+            <span class="title">IRL Side-Quester</span>
+            <span class="location">The Real World | 200X - Present</span>
+        </div>
+        <ul>
+            <li>Successfully avoided the "adulting" main storyline to focus on digital clout farming.</li>
+            <li>Mastered the art of looking busy in lectures while actually doomscrolling for content.</li>
+            <li>Logged over 10,000 hours of "research" on TikTok, Instagram Reels, and YouTube Shorts.</li>
+        </ul>
+
+        <h3>Character Build (Education)</h3>
+        <p><span class="section-title">B.Tech in Advanced Trolling & Digital Sorcery</span><br>
+        Department of Computer Science & Engineering (CSE), Level 3<br>
+        <span class="section-title">Core Modules:</span> Skibidi-nomics 101, Intro to Glazing, The History of Ohio, Advanced Memeology, The Philosophy of the Sigma Male Grindset.</p>
+
+        <h3>Loot & Legendary Drops (Achievements)</h3>
+        <ul>
+            <li>The Gyatt of the Covenant: Sticked it out for the Rizzler and was granted this legendary artifact.</li>
+            <li>Certified Glazer (Level 99): Officially recognized as a top-tier supporter of quality content.</li>
+            <li>Flawless Vibe Check Record (2023-2024): No L's taken.</li>
+            <li>Survived the Grimace Shake (Canon Event): It was a canon event; I could not interfere. I am stronger for it.</li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
